@@ -27,7 +27,7 @@ const obj4 = {5: "a", 6: "b"}
 // const obj3 = { obj1, obj2 }  //{} is target and obj1,2,3 are source
 // const obj3 = Object.assign({}, obj1, obj2,obj4) // object assign mdn
 const obj3 = {...obj1, ...obj2} // spread operator
-console.log(obj3);
+// console.log(obj3);
 
 const users = [
     {
@@ -45,21 +45,37 @@ const users = [
 ]
 
 users[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
-
-
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
 
+// object   destructuring........
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "sam"
+}
+
+// course.courseInstructor
+const {courseInstructor: instructor} = course
+
+// console.log(courseInstructor);
+console.log(instructor);
 
 
+// {
+//     "name": "Prabin",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
 
-
-
-
-
+[
+    {},
+    {},
+    {}
+]
